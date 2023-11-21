@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISNewРасчет",
+  "modelName": "i-i-s-new-расчет",
+  "className": "Расчет",
+  "nameSpace": "IIS.New",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDорганизации",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iDрасчета",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iDсотрудника",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "период_болезни",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-new-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-new-сотрудник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "empty",
+      "relatedTo": "i-i-s-new-таблица",
+      "inverse": "empty"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РасчетE",
+      "modelName": "i-i-s-new-расчет",
+      "attrs": [
+        {
+          "name": "iDрасчета",
+          "caption": "IDрасчета",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDорганизации",
+          "caption": "IDорганизации",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDсотрудника",
+          "caption": "IDсотрудника",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "период_болезни",
+          "caption": "Период_болезни",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "РасчетL",
+      "modelName": "i-i-s-new-расчет",
+      "attrs": [
+        {
+          "name": "iDрасчета",
+          "caption": "IDрасчета",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDорганизации",
+          "caption": "IDорганизации",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDсотрудника",
+          "caption": "IDсотрудника",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "период_болезни",
+          "caption": "Период_болезни",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

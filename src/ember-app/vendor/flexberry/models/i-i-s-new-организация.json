@@ -1,0 +1,159 @@
+﻿{
+  "name": "IISNewОрганизация",
+  "modelName": "i-i-s-new-организация",
+  "className": "Организация",
+  "nameSpace": "IIS.New",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDорганизации",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "иНН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кПП",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "оГРН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОрганизацияE",
+      "modelName": "i-i-s-new-организация",
+      "attrs": [
+        {
+          "name": "iDорганизации",
+          "caption": "I dорганизации",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "кПП",
+          "caption": "КПП",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "оГРН",
+          "caption": "ОГРН",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ОрганизацияL",
+      "modelName": "i-i-s-new-организация",
+      "attrs": [
+        {
+          "name": "iDорганизации",
+          "caption": "I dорганизации",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "кПП",
+          "caption": "КПП",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "оГРН",
+          "caption": "ОГРН",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

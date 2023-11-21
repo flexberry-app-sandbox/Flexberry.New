@@ -1,0 +1,134 @@
+﻿{
+  "name": "IISNewГрафик",
+  "modelName": "i-i-s-new-график",
+  "className": "График",
+  "nameSpace": "IIS.New",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDсотрудника",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кол_часов",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "причина",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "явка",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-new-сотрудник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ГрафикE",
+      "modelName": "i-i-s-new-график",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "явка",
+          "caption": "Явка",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "причина",
+          "caption": "Причина",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "кол_часов",
+          "caption": "Кол_часов",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ГрафикL",
+      "modelName": "i-i-s-new-график",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "явка",
+          "caption": "Явка",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "причина",
+          "caption": "Причина",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "кол_часов",
+          "caption": "Кол_часов",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

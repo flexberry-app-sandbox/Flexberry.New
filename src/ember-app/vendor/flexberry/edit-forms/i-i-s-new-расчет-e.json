@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Расчет",
+  "name": "IISNewРасчетE",
+  "className": "РасчетE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-расчет",
+      "modelProjection": "РасчетE"
+    }
+  ]
+}

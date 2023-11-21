@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-new-подразделения-e",
+  "editForm": "i-i-s-new-подразделения-e",
+  "external": false,
+  "caption": "Подразделения",
+  "name": "IISNewПодразделенияL",
+  "className": "ПодразделенияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-подразделения",
+      "modelProjection": "ПодразделенияL"
+    }
+  ]
+}

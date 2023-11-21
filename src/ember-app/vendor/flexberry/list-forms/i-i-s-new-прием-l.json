@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-new-прием-e",
+  "editForm": "i-i-s-new-прием-e",
+  "external": false,
+  "caption": "Прием",
+  "name": "IISNewПриемL",
+  "className": "ПриемL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-прием",
+      "modelProjection": "ПриемL"
+    }
+  ]
+}

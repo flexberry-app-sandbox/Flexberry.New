@@ -1,0 +1,132 @@
+﻿{
+  "name": "IISNewПрием",
+  "modelName": "i-i-s-new-прием",
+  "className": "Прием",
+  "nameSpace": "IIS.New",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDорганизации",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iDсотрудника",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ставка",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-new-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-new-сотрудник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПриемE",
+      "modelName": "i-i-s-new-прием",
+      "attrs": [
+        {
+          "name": "iDорганизации",
+          "caption": "IDорганизации",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "ставка",
+          "caption": "Ставка",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "iDсотрудника",
+          "caption": "IDсотрудника",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПриемL",
+      "modelName": "i-i-s-new-прием",
+      "attrs": [
+        {
+          "name": "iDорганизации",
+          "caption": "IDорганизации",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDсотрудника",
+          "caption": "IDсотрудника",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "ставка",
+          "caption": "Ставка",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

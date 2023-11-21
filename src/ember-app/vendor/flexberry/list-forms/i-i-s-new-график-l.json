@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-new-график-e",
+  "editForm": "i-i-s-new-график-e",
+  "external": false,
+  "caption": "График",
+  "name": "IISNewГрафикL",
+  "className": "ГрафикL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-график",
+      "modelProjection": "ГрафикL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-new-увольнение-e",
+  "editForm": "i-i-s-new-увольнение-e",
+  "external": false,
+  "caption": "Увольнение",
+  "name": "IISNewУвольнениеL",
+  "className": "УвольнениеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-увольнение",
+      "modelProjection": "УвольнениеL"
+    }
+  ]
+}

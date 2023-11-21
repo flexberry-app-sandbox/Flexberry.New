@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "New",
+  "applicationTitle": "New",
+  "items": [
+    {
+      "link": null,
+      "menuName": "new",
+      "caption": "New",
+      "title": "New",
+      "children": [
+        {
+          "link": "i-i-s-new-прием-l",
+          "menuName": null,
+          "caption": "Прием",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-подразделения-l",
+          "menuName": null,
+          "caption": "Подразделения",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-увольнение-l",
+          "menuName": null,
+          "caption": "Увольнение",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-график-l",
+          "menuName": null,
+          "caption": "График",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-расчет-l",
+          "menuName": null,
+          "caption": "Расчет",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

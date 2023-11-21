@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISNewДолжности",
+  "modelName": "i-i-s-new-должности",
+  "className": "Должности",
+  "nameSpace": "IIS.New",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDдолжности",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименовани",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДолжностиE",
+      "modelName": "i-i-s-new-должности",
+      "attrs": [
+        {
+          "name": "iDдолжности",
+          "caption": "IDдолжности",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименовани",
+          "caption": "Наименовани",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ДолжностиL",
+      "modelName": "i-i-s-new-должности",
+      "attrs": [
+        {
+          "name": "iDдолжности",
+          "caption": "IDдолжности",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименовани",
+          "caption": "Наименовани",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

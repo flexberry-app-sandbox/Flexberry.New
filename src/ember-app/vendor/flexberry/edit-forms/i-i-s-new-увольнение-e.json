@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Увольнение",
+  "name": "IISNewУвольнениеE",
+  "className": "УвольнениеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-увольнение",
+      "modelProjection": "УвольнениеE"
+    }
+  ]
+}

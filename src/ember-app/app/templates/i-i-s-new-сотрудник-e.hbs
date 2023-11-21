@@ -1,0 +1,97 @@
+<h3 class="ui header">{{t "forms.i-i-s-new-сотрудник-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.iDдолжности
+      class=(if (v-get validationModel "iDдолжности" "isInvalid") "error")
+      label=(t "forms.i-i-s-new-сотрудник-e.iDдолжности-caption")
+      data-test-i-i-s-new-сотрудник-e-iDдолжности=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "iDдолжности" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.iDсотрудника
+      class=(if (v-get validationModel "iDсотрудника" "isInvalid") "error")
+      label=(t "forms.i-i-s-new-сотрудник-e.iDсотрудника-caption")
+      data-test-i-i-s-new-сотрудник-e-iDсотрудника=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "iDсотрудника" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.iDПодразделения
+      class=(if (v-get validationModel "iDПодразделения" "isInvalid") "error")
+      label=(t "forms.i-i-s-new-сотрудник-e.iDПодразделения-caption")
+      data-test-i-i-s-new-сотрудник-e-iDПодразделения=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "iDПодразделения" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.фИО
+      class=(if (v-get validationModel "фИО" "isInvalid") "error")
+      label=(t "forms.i-i-s-new-сотрудник-e.фИО-caption")
+      data-test-i-i-s-new-сотрудник-e-фИО=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "фИО" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.иНН
+      class=(if (v-get validationModel "иНН" "isInvalid") "error")
+      label=(t "forms.i-i-s-new-сотрудник-e.иНН-caption")
+      data-test-i-i-s-new-сотрудник-e-иНН=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "иНН" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.снилс
+      class=(if (v-get validationModel "снилс" "isInvalid") "error")
+      label=(t "forms.i-i-s-new-сотрудник-e.снилс-caption")
+      data-test-i-i-s-new-сотрудник-e-снилс=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "снилс" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер_телефона
+      class=(if (v-get validationModel "номер_телефона" "isInvalid") "error")
+      label=(t "forms.i-i-s-new-сотрудник-e.номер_телефона-caption")
+      data-test-i-i-s-new-сотрудник-e-номер_телефона=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер_телефона" "message")}}
+  </div>
+</form>

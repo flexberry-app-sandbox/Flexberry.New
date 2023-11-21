@@ -1,0 +1,195 @@
+﻿{
+  "name": "IISNewСотрудник",
+  "modelName": "i-i-s-new-сотрудник",
+  "className": "Сотрудник",
+  "nameSpace": "IIS.New",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDдолжности",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iDПодразделения",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "iDсотрудника",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "иНН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер_телефона",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "снилс",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должности",
+      "relatedTo": "i-i-s-new-должности",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "подразделения",
+      "relatedTo": "i-i-s-new-подразделения",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникE",
+      "modelName": "i-i-s-new-сотрудник",
+      "attrs": [
+        {
+          "name": "iDдолжности",
+          "caption": "Idдолжности",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDсотрудника",
+          "caption": "IDсотрудника",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDПодразделения",
+          "caption": "Id подразделения",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "снилс",
+          "caption": "Снилс",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "номер_телефона",
+          "caption": "Номер_телефона",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникL",
+      "modelName": "i-i-s-new-сотрудник",
+      "attrs": [
+        {
+          "name": "iDсотрудника",
+          "caption": "IDсотрудника",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDдолжности",
+          "caption": "Idдолжности",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "iDПодразделения",
+          "caption": "Id подразделения",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "снилс",
+          "caption": "Снилс",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "номер_телефона",
+          "caption": "Номер_телефона",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

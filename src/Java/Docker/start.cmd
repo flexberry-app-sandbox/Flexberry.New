@@ -1,0 +1,1 @@
+docker-compose -p new-java up -d

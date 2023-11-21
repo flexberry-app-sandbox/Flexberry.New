@@ -1,0 +1,104 @@
+﻿{
+  "name": "IISNewТаблица",
+  "modelName": "i-i-s-new-таблица",
+  "className": "Таблица",
+  "nameSpace": "IIS.New",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "заработок_год",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "пособие",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "срзаработок",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "empty",
+      "relatedTo": "i-i-s-new-расчет",
+      "inverse": "empty"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТаблицаE",
+      "modelName": "i-i-s-new-таблица",
+      "attrs": [
+        {
+          "name": "пособие",
+          "caption": "Пособие",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "заработок_год",
+          "caption": "Заработок_год",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "срзаработок",
+          "caption": "Срзаработок",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТаблицаL",
+      "modelName": "i-i-s-new-таблица",
+      "attrs": [
+        {
+          "name": "пособие",
+          "caption": "Пособие",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "заработок_год",
+          "caption": "Заработок_год",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "срзаработок",
+          "caption": "Срзаработок",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
